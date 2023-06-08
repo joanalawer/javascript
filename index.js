@@ -73,7 +73,55 @@ console.log(array);
 var multiArray = [[1,2,3], [4,5,6], [7,8,9], [10,11,12], 13, 14];
 var myData = multiArray[2][1];
 console.log(myData);
-//  append an array by adding
+//  append an array by adding element at the end of array
 myData.push([15, 16]);
 console.log(myData);
-// append array by removing
+
+// append array by pop() : removes the last element in the array
+var ourArray = [1,2,3];
+var removedFromOurArray = ourArray.pop();
+
+var myArray = [["John", 23], ["cat", 2]];
+var removedFromOurArray = myArray.pop();
+console.log(myArray);
+
+// append array by shift() : removes the first element in the array
+var ourArray = ["Stimpson", "J", "cat"];
+var removedFromOurArray = ourArray.shift();
+
+var myArray = [["John", 23], ["cat", 2]];
+var removedFromOurArray = myArray.shift();
+console.log(myArray);
+ 
+// append array by unshift() : adding element at he beginning of the array
+var ourArray = ["Stimpson", "J", "cat"];
+ourArray.shift();
+ourArray.shift();
+
+var myArray = [["John", 23], ["dog", 3]];
+myArray.shift();
+ourArray.shift("Paul");
+
+console.log(myArray);
+
+// Global Scope and Functions
+// variables defined outside the function block have global scope
+var myGlobal = 10;
+
+function func1(){
+    oopsGlobal = 5;
+}
+
+function func2(){
+    var output = "";
+    if (typeoof(myGlobal) != "undefined") {
+        output += "myGlobal: " + myGlobal;
+    }
+    if (typeoof(oopsGlobal) != "undefined") {
+        output += "oopsGlobal: " + oopsGlobal;
+    }
+    console.log(output);
+}
+
+func1();
+func2();

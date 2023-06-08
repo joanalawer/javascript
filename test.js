@@ -1,7 +1,21 @@
-var multiArray = [[1,2,3], [4,5,6], [7,8,9], [10,11,12], 13, 14];
-//var myData = multiArray[2][1];
-//console.log(myData);
-//  append an array by adding
-multiArray.push([15, 16]);
-console.log(multiArray);
-// append array by removing
+// Global Scope and Functions
+// variables defined outside the function block have global scope
+var myGlobal = 10;
+
+function func1(){
+    oopsGlobal = 5;
+}
+
+function func2(){
+    var output = "";
+    if (typeof(myGlobal) != "undefined") {
+        output += "myGlobal: " + myGlobal + "\n";
+    }
+    if (typeof(oopsGlobal) != "undefined") {
+        output += "oopsGlobal: " + oopsGlobal;
+    }
+    console.log(output);
+}
+
+func1(); 
+func2();

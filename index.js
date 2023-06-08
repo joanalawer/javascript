@@ -104,7 +104,7 @@ ourArray.shift("Paul");
 
 console.log(myArray);
 
-// Global Scope and Functions
+// Global a d Local Scope and Functions
 // variables defined outside the function block have global scope
 var myGlobal = 10;
 
@@ -113,7 +113,7 @@ function func1(){
 }
 
 function func2(){
-    var output = "";
+    var output = "";        // this variable has local scope
     if (typeoof(myGlobal) != "undefined") {
         output += "myGlobal: " + myGlobal;
     }

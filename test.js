@@ -1,11 +1,5 @@
-// Global & Local Scope Function
-var outWear = "T-Shirt";
-
-function myOutfit (){
-    var outWear = "sweater";
-
-    return outWear;
+// Using return
+function timesFive(num){
+    return num * 5;
 }
-
-console.log(myOutfit());
-console.log(outWear);
+console.log(timesFive(10));

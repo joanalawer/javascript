@@ -138,3 +138,9 @@ function myOutfit (){
 
 console.log(myOutfit());
 console.log(outWear);
+
+// Using return
+function timesFive(num){
+    return num * 5;
+}
+console.log(timesFive(10));

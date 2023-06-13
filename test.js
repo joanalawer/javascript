@@ -1,12 +1,8 @@
-// QUEUES 
-/* Remove first item of arrary and return item; 
-Add new item to end of array ansd print new array */
-function nextInLine(arr, item){
-    arr.push(item);
-    return arr.shift();
+//  Conditional Statements: if
+function myTrueOrFalse(isTrueOrFalse){
+    if (isTrueOrFalse){
+        return "Yes, It is true";
+    }
+    return "No, It is false";
 }
-var testArr = [1,2,3,4,5];
-
-console.log("Before: " + JSON.stringify(testArr));
-console.log(nextInLine(testArr, 6));
-console.log("After: " + JSON.stringify(testArr));
+console.log(myTrueOrFalse(true));

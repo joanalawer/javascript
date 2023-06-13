@@ -158,3 +158,14 @@ var testArr = [1,2,3,4,5];
 console.log("Before: " + JSON.stringify(testArr));
 console.log(nextInLine(testArr, 6));
 console.log("After: " + JSON.stringify(testArr));
+
+// Boolean values: true or false
+
+//  Conditional Statements: if
+function myTrueOrFalse(){
+    if (true){
+        return "Yes, It is true";
+    }
+    return "No, It is false";
+}
+console.log(myTrueOrFalse(false));

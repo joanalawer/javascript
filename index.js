@@ -169,3 +169,21 @@ function myTrueOrFalse(){
     return "No, It is false";
 }
 console.log(myTrueOrFalse(false));
+
+
+// Comparion
+/* Equality, Strict equality, not equal, strict in equality 
+    greter than, less than, greater than or equal to, less than or equal to
+    logival and, logical or*/
+// ==, ===, !=, !==, <, >, <=, >=, &&, ||
+
+// Else statement
+function myElseStatement(){
+    if ( Kofi = "boy"){
+        return "Yes, It is true";
+    } else if (Afi = "boy"){
+        return "No, It is false";
+    }
+    
+}
+console.log(myElseStatement());

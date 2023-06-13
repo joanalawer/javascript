@@ -1,8 +1,13 @@
-//  Conditional Statements: if
-function myTrueOrFalse(isTrueOrFalse){
-    if (isTrueOrFalse){
-        return "Yes, It is true";
+// Else statement
+function myElseStatement(val){
+    var status = "";
+
+    if (val < 18){
+        status = "Too young";
+    } else {
+        status = "Too old";
     }
-    return "No, It is false";
+    return status;
 }
-console.log(myTrueOrFalse(true));
+
+console.log(myElseStatement(57));

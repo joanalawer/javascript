@@ -4,10 +4,13 @@ function myElseStatement(val){
 
     if (val < 18){
         status = "Too young";
-    } else {
+    } else if (val > 50){
         status = "Too old";
+    }
+    else {
+        status = "Just right";
     }
     return status;
 }
 
-console.log(myElseStatement(57));
+console.log(myElseStatement(16)); 

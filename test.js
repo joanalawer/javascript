@@ -1,21 +1,11 @@
-// Global Scope and Functions
-// variables defined outside the function block have global scope
-var myGlobal = 10;
+// Global & Local Scope Function
+var outWear = "T-Shirt";
 
-function func1(){
-    oopsGlobal = 5;
+function myOutfit (){
+    var outWear = "sweater";
+
+    return outWear;
 }
 
-function func2(){
-    var output = "";
-    if (typeof(myGlobal) != "undefined") {
-        output += "myGlobal: " + myGlobal + "\n";
-    }
-    if (typeof(oopsGlobal) != "undefined") {
-        output += "oopsGlobal: " + oopsGlobal;
-    }
-    console.log(output);
-}
-
-func1(); 
-func2();
+console.log(myOutfit());
+console.log(outWear);

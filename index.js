@@ -106,10 +106,11 @@ console.log(myArray);
 
 // Global a d Local Scope and Functions
 // variables defined outside the function block have global scope
+// when global and local variables have the same name, the local variable takes precedence 
 var myGlobal = 10;
 
 function func1(){
-    oopsGlobal = 5;
+    oopsGlobal = 5;  // placing var before oopsGLobal makes it a local function
 }
 
 function func2(){
@@ -125,3 +126,15 @@ function func2(){
 
 func1();
 func2();
+
+// Global & Local Scope Function
+var outWear = "T-Shirt";
+
+function myOutfit (){
+    var outWear = "sweater"
+
+    return outWear;
+}
+
+console.log(myOutfit());
+console.log(outWear);

@@ -103,6 +103,9 @@ myArray.shift();
 ourArray.shift("Paul");
 
 console.log(myArray);
+/***********************************************************************************************************/
+
+/***********************************************************************************************************/
 
 // Global a d Local Scope and Functions
 // variables defined outside the function block have global scope
@@ -144,8 +147,9 @@ function timesFive(num){
     return num * 5;
 }
 console.log(timesFive(10));
+/***********************************************************************************************************/
 
-
+/***********************************************************************************************************/
 // QUEUES 
 /* Remove first item of arrary and return item; 
 Add new item to end of array ansd print new array */
@@ -169,7 +173,9 @@ function myTrueOrFalse(){
     return "No, It is false";
 }
 console.log(myTrueOrFalse(false));
+/************************************************************************************************************/
 
+/***********************************************************************************************************/
 
 // Comparion
 /* Equality, Strict equality, not equal, strict in equality 
@@ -191,5 +197,20 @@ function myElseStatement(val){
     }
     return status;
 }
-
 console.log(myElseStatement(16)); 
+
+// Chain else
+function testChain(num){
+    if (num < 5 ){
+        return "Tiny";
+    }else if (num < 10){
+        return "Small";
+    }else if (num < 15){
+        return "Medium";
+    }else if (num < 20){
+        return "Large";
+    }else {
+
+    }
+}
+console.log(testChain(3))

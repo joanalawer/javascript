@@ -16,12 +16,12 @@ function multipleCaseInput(val) {
         case 9:
             answer = "Best";
             break;
-        // default:
-        //     answer = "Grade";
-        //     break;
+        default:
+            answer = "Grade";
+            break;
     }
 
     return answer;
 }
 
-console.log(multipleCaseInput(1));
+console.log(multipleCaseInput(0));

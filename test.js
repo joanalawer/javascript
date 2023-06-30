@@ -8,3 +8,4 @@ var myList = {
 // myList is the object
 // Food, Books, Savings, Vacation are called property
 // Waakye, Mystery, $3000000, Greece are values
+

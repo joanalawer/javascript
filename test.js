@@ -1,11 +1,17 @@
-/*  BUILD OBJECTS IN JAVASCRIPT */
-var myList = {
-    "Food": "Waakye",
-    "Books": "Mystery",
-    "Savings": $3000000,
-    "Vacation": "Greece"
-};
-// myList is the object
-// Food, Books, Savings, Vacation are called property
-// Waakye, Mystery, $3000000, Greece are values
+// Lookup values
+function phoneticLookup(val) {
+    var result = "";
+    var lookup =  {
+       "adam": "Alpha",
+       "boston": "Beta",
+       "chicago": "Charlie",
+       "denver": "Delta",
+       "easy": "Echo",
+       "florida": "Foxtrot"
+    };
+    result = lookup[val];
 
+    return result;
+}
+
+console.log(phoneticLookup("florida"));

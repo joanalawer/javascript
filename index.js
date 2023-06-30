@@ -324,5 +324,18 @@ var booksValue = myList.Books;
 var savingsValue = myList.Savings;
 var vacationValue = myList.Vacation;
 
+/* Accessing Object Properties with bracket notation */
+// This can be used always but mostly when the property has space in it
+var myList = {
+    "favourite food": "Waakye",
+    "book genre": "Mystery",
+    "account balance": $3000000,
+    "vacation destination": "Greece"
+};
+
+var foodValue = myList["favourite food"];
+var booksValue = myList["book genre"];
+var savingsValue = myList["account balance"];
+var vacationValue = myList["vacation destination"];
 
 

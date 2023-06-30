@@ -1,21 +1,25 @@
-function caseInSwitch(val) {
+function switchOfStuff(val) {
     var answer = "";
     switch(val) {
-        case 1:
-            answer = "Alpha";
+        case "a":
+            answer = "Azul";
             break;
-        case 2:
-            answer = "Beta";
+        case "b":
+            answer = "Beryl";
             break;
-        case 3:
-            answer = "Gamma";
+        case "c":
+            answer = "Cobalt";
             break;
-        case 4:
-            answer = "Delta";
+        case "e":
+            answer = "Emerald";
             break;
+        default:
+            answer = "Gem";
+            break;
+
     }
 
     return answer;
 }
 
-console.log(caseInSwitch(5));
+console.log(switchOfStuff(5));

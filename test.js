@@ -1,28 +1,21 @@
-var names = ["Hole-in-one!", "Eagle", "Birdie", "Par", "Bogey", "Double Bogey", "Go Home"]
-function golfScore(par, strokes){
-    if (strokes == 1){
-        return names[0]
-    }
-    else if (strokes <= par - 2){
-        return names[1]
-    }
-    else if (strokes <= par - 1){
-        return names[2]
-    }
-    else if (strokes <= par){
-        return names[3]
-    }
-    else if (strokes <= par + 1){
-        return names[4]
-    }
-    else if (strokes <= par + 2){
-        return names[5]
-    }
-    else if (strokes <= par + 3){
-        return names[6]
+function caseInSwitch(val) {
+    var answer = "";
+    switch(val) {
+        case 1:
+            answer = "Alpha";
+            break;
+        case 2:
+            answer = "Beta";
+            break;
+        case 3:
+            answer = "Gamma";
+            break;
+        case 4:
+            answer = "Delta";
+            break;
     }
 
-    return "Change Me";
+    return answer;
 }
 
-console.log(golfScore(5, 1));
+console.log(caseInSwitch(5));

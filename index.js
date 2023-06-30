@@ -350,3 +350,24 @@ var gradeDict = {
 
 var bestGrade = 1;
 var grade = gradeDict[bestGrade];
+// Append a property using dot notation
+// Add new property to object using dot or bracket notation
+// Deleting a property: "delete ogject.property;"
+
+// Lookup values
+function phoneticLookup(val) {
+    var result = "";
+    var lookup =  {
+       "adam": "Alpha",
+       "boston": "Beta",
+       "chicago": "Charlie",
+       "denver": "Delta",
+       "easy": "Echo",
+       "florida": "Foxtrot"
+    };
+    result = lookup[val];
+
+    return result;
+}
+
+console.log(phoneticLookup("chicago"));

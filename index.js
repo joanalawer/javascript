@@ -318,5 +318,11 @@ var myList = {
 // Food, Books, Savings, Vacation are called property
 // Waakye, Mystery, $3000000, Greece are values
 
+/* Accessing Object Properties with dot notation */
+var foodValue = myList.Food;
+var booksValue = myList.Books;
+var savingsValue = myList.Savings;
+var vacationValue = myList.Vacation;
+
 
 

@@ -1,17 +1,17 @@
-// Lookup values
-function phoneticLookup(val) {
-    var result = "";
-    var lookup =  {
-       "adam": "Alpha",
-       "boston": "Beta",
-       "chicago": "Charlie",
-       "denver": "Delta",
-       "easy": "Echo",
-       "florida": "Foxtrot"
-    };
-    result = lookup[val];
+/* Testing Objects for properties using hasOwnProperty() method */
+var myObj = {
+    gift: "pony",
+    pet: "kitten",
+    bed: "sleigh"
+};
 
-    return result;
+function checkObj(checkProp) {
+    if (myObj.hasOwnProperty(checkProp)) {
+        return myObj[checkProp];
+    }
+    else {
+        return "Not Found";
+    }
 }
 
-console.log(phoneticLookup("florida"));
+console.log(checkObj("flower"));

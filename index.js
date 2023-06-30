@@ -298,7 +298,7 @@ function cc(card) {
         holdbet = 'Bet'
     }
 
-    return coint + " " + holdbet;
+    return count + " " + holdbet;
 }
 
 cc(2); cc('K'); cc(10); cc('K'); cc('A');

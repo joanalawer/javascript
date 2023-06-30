@@ -338,4 +338,15 @@ var booksValue = myList["book genre"];
 var savingsValue = myList["account balance"];
 var vacationValue = myList["vacation destination"];
 
+/* Accessing Object Properties with variables */
+var gradeDict = {
+    1: "Distinction",
+    2: "Very Good",
+    3: "Good",
+    4: "Fair",
+    5: "Pass",
+    6: "Fail"
+};
 
+var bestGrade = 1;
+var grade = gradeDict[bestGrade];

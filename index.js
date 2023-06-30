@@ -245,3 +245,29 @@ function golfScore(par, stroke){
 }
 
 console.log(golfScore(5, 4));
+
+/* ************************************************************************* */
+
+/* ************************************************************************* */
+/* SWITCH STATEMENTS */
+function caseInSwitch(val) {
+    var answer = "";
+    switch(val) {
+        case 1:
+            answer = "Alpha";
+            break;
+        case 2:
+            answer = "Beta";
+            break;
+        case 3:
+            answer = "Gamma";
+            break;
+        case 4:
+            answer = "Delta";
+            break;
+    }
+
+    return answer;
+}
+/* ************************************************************************* */
+

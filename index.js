@@ -389,3 +389,28 @@ function checkObj(checkProp) {
 }
 
 console.log(checkObj("gift"));
+
+// Manipulating complex objects 
+/* A javascript object is a way to store flexible data:
+can store strings, arrays and even other objects.
+*/
+var myMusicCollection = [
+    {
+        "artist": "Billy Joel",
+        "title": "Piano Man",
+        "release_year": 1973,
+        "formats": [
+            "CD", "8T", "LP"
+        ],
+        "gold": true
+    },
+    {
+        "artist": "Beau Carnes",
+        "title": "Cereal Man",
+        "release_year": 2003,
+        "formats": [
+            "YouTube video"
+        ],
+        "gold": false
+    }
+]

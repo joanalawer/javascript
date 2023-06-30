@@ -1,25 +1,27 @@
-function switchOfStuff(val) {
+function multipleCaseInput(val) {
     var answer = "";
     switch(val) {
-        case "a":
-            answer = "Azul";
+        case "1":
+        case "2":
+        case "3":
+            answer = "Good";
             break;
-        case "b":
-            answer = "Beryl";
+        case "4":
+        case "5":
+        case "6":
+            answer = "Better";
             break;
-        case "c":
-            answer = "Cobalt";
-            break;
-        case "e":
-            answer = "Emerald";
+        case "7":
+        case "8":
+        case "9":
+            answer = "Best";
             break;
         default:
-            answer = "Gem";
+            answer = "Grade";
             break;
-
     }
 
     return answer;
 }
 
-console.log(switchOfStuff(5));
+console.log(multipleCaseInput(9));

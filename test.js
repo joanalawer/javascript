@@ -18,5 +18,5 @@ var myPlants = [
    }
 ];
 
-var secondTree = myPlants[1].list[1];
+var secondTree = myPlants[0].list[2];
 console.log(secondTree);

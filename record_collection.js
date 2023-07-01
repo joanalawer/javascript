@@ -43,4 +43,5 @@ function updateRecords(id, prop, value) {
 }
 
 // Alter values below to test code
-console.log(updateRecords(5439, "artist", "ABBA"));
+console.log(updateRecords(2468, "tracks", "test"));
+// console.log(updateRecords(5439, "artist", "ABBA"));

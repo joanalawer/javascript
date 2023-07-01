@@ -1,16 +1,22 @@
-/* Acessing Nested Objects */
-var myStorage = {
-    "car": {
-        "inside": {
-            "glove box": "maps",
-            "passenger seat": "crumbs"
-        },
-        "outside": {
-            "trunk": "jack"
-        }
-    }
- };
+ /* Accessing Nested Objects */
+var myPlants = [
+   {
+       type: "flowers",
+       list:[
+           "rose",
+           "tulip",
+           "dandelion"
+       ]
+   },
+   {
+       type: "trees",
+       list: [
+           "fir",
+           "pine",
+           "birch"
+       ]
+   }
+];
 
- var gloveBoxContent = myStorage.car.inside["glove box"];
-
- console.log(gloveBoxContent)
+var secondTree = myPlants[1].list[1];
+console.log(secondTree);

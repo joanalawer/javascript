@@ -1,22 +1,10 @@
- /* Accessing Nested Objects */
-var myPlants = [
-   {
-       type: "flowers",
-       list:[
-           "rose",
-           "tulip",
-           "dandelion"
-       ]
-   },
-   {
-       type: "trees",
-       list: [
-           "fir",
-           "pine",
-           "birch"
-       ]
-   }
-];
+/*ITERATE WITH WHILE LOOP*/
+var myArray = [];   // declare an empty array list
 
-var secondTree = myPlants[0].list[2];
-console.log(secondTree);
+var i = 0;          // declare and initialise a counter i to 0
+while (i < 10) {    // set condition to 10
+    myArray.push(i);// append list with initial counter 
+    i++;            // increment count while value is less than 10
+}
+
+console.log(myArray); // display final list

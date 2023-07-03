@@ -1,10 +1,9 @@
-// Iterate with do...while loops
-var myArray = [];
-var i = 10;
+// Generate random whole numbers within a range - 
+function randomRange(minNum, maxNum) {
+    return Math.floor(Math.random() * (maxNum -minNum + 1)) + minNum;
 
-do {
-    myArray.push(i);
-    i++;
-} while (i < 5)
+}
 
-console.log(i, myArray);
+var myRandom = randomRange(5, 15);
+
+console.log(myRandom);

@@ -32,13 +32,15 @@ function lookupProfile(name, prop) {
     for (var i = 0; i < contacts.length; i++) {
         // Check if name parameter is a name in the contact list
         if (contacts[i].firstName === name) {
+            // Return property value or Return custom statement
             return contacts[i][prop] || "No such property";
         } 
     }
+    // Return suctom statement if contact does not exist
     return "No such contact";
 }
 
 // Values can be changed to test function
-var data = lookupProfile("Sherlock", "likes")
+var data = lookupProfile("John", "address")
 
 console.log(data);

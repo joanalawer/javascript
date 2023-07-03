@@ -489,4 +489,5 @@ var product = multiplyAll([[1,2], [3,4], [5,6,7]]);
 console.log(product);
 /* ************************************************************************* */
 
-// Iterate with do...while loops
+// Generate random fraction - Math.random()
+

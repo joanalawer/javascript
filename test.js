@@ -1,9 +1,10 @@
-/*ITERATE backwards even numbers WITH for LOOP*/
-var myArray = []; 
+/*Iterate through an array with a for loop */
+var myArray = [9, 10, 11, 12]; 
 
-// var i = 0;      
-for (var i = 10; i > 0; i -= 2) {    
-    myArray.push(i);
+var myTotal = 0;
+    
+for (var i = 1; i < myArray.length; i++) {    
+    myTotal += myArray[i];
 }
 
-console.log(myArray);
+console.log(myTotal);

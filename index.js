@@ -501,3 +501,10 @@ function randomRange(minNum, maxNum) {
 var myRandom = randomRange(5, 15);
 
 console.log(myRandom);
+
+// parseInt() - takes a string and returns an integer: Eg.
+function returnStringAsInteger(str) {
+    return parseInt(str);
+}
+
+returnStringAsInteger("345");

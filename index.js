@@ -490,4 +490,4 @@ console.log(product);
 /* ************************************************************************* */
 
 // Generate random fraction - Math.random()
-
+// Generate random whole numbers - Math.floor(Math.random())

@@ -28,8 +28,17 @@ var contacts = [
 
 // Setup function
 function lookupProfile(name, prop) {
-    // 
+    // Iterate through each element in cotact list
+    for (var i = 0; i < contacts.length; i++) {
+        // Check if name parameter is a name in the contact list
+        if (contacts[i].firstName === name) {
+            return contacts[i][prop] || "No such property";
+        } 
+    }
+    return "No such contact";
 }
 
 // Values can be changed to test function
-var data = lookupProfile()
+var data = lookupProfile("Sherlock", "likes")
+
+console.log(data);

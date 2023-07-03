@@ -1,10 +1,14 @@
-/*Iterate through an array with a for loop */
-var myArray = [9, 10, 11, 12]; 
+// Nesting for loops
+function multiplyAll(arr) {
+    var product = 1;
 
-var myTotal = 0;
-    
-for (var i = 1; i < myArray.length; i++) {    
-    myTotal += myArray[i];
+    for (var i = 0; i < arr.length; i++) {
+        for (var j = 0; j < arr[i].length; j++) {
+            product *= arr[i][j];
+        }
+    }
+    return product;
 }
+var product = multiplyAll([[1,2], [3,4], [5,6,7]]);
 
-console.log(myTotal);
+console.log(product);

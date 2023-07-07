@@ -508,3 +508,29 @@ function returnStringAsInteger(str) {
 }
 
 returnStringAsInteger("345");
+
+// Using parseInt Function with a Radix
+// (radix specifies the base of a number in a string)
+// parseInt(str, 2) - specifies base two
+/* ************************************************************************* */
+
+
+/* ************************************************************************* */
+/* Use the conditional (Ternary) Operator
+    condition ? statement-if-true : statement-if-false;*/
+function checkEqual(a, b) {
+    if(a == b) {
+        return true;
+    }
+    else {
+        return false;
+    }
+}
+
+checkEqual(1, 2);
+
+// Ternary conversion
+function checkEqual(a, b) {
+    return s === b ? true : false;
+}
+checkEqual(1, 2);

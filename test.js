@@ -1,9 +1,6 @@
-// Generate random whole numbers within a range - 
-function randomRange(minNum, maxNum) {
-    return Math.floor(Math.random() * (maxNum - minNum + 1)) + minNum;
-
+// Ternary conversion
+function checkEqual(a, b) {
+    return a === b ? true : false;
 }
 
-var myRandom = randomRange(5, 15);
-
-console.log(myRandom);
+console.log(checkEqual(2, 2));

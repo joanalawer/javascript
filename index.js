@@ -519,7 +519,7 @@ returnStringAsInteger("345");
 /* Use the conditional (Ternary) Operator
     condition ? statement-if-true : statement-if-false;*/
 function checkEqual(a, b) {
-    if(a == b) {
+    if (a == b) {
         return true;
     }
     else {
@@ -538,4 +538,9 @@ checkEqual(1, 2);
 
 
 /* ************************************************************************* */
- 
+ /* Use Multiple conditional (Ternary) Operator */
+function checkSign(num) {
+    return num > 0 ? "positive" : num < 0 ? "negative" : "zero"
+}
+
+console.log(checkSign(10));

@@ -1,6 +1,6 @@
-// Ternary conversion
-function checkEqual(a, b) {
-    return a === b ? true : false;
+ /* Use Multiple conditional (Ternary) Operator */
+ function checkSign(num) {
+    return num > 0 ? "positive" : num < 0 ? "negative" : "zero"
 }
 
-console.log(checkEqual(2, 2));
+console.log(checkSign(10));

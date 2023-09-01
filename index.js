@@ -544,3 +544,29 @@ function checkSign(num) {
 }
 
 console.log(checkSign(10));
+/* ************************************************************************* */
+
+
+/* ************************************************************************* */
+// Difference between the var and let keywords
+// let does not allow a variable to be decalred more than once, 
+// but the variable can be assigned
+
+// var catName = "Quincy";
+// var quote;
+
+// var catName = "Beau";
+
+let catName = "Quincy";
+let quote;
+
+catName = "Beau";
+
+function catTalk(){
+    "use strict";
+
+    catName = "Oliver";
+    quote = catName + "says Meow!";
+
+}
+catTalk();

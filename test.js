@@ -1,6 +1,12 @@
- /* Use Multiple conditional (Ternary) Operator */
- function checkSign(num) {
-    return num > 0 ? "positive" : num < 0 ? "negative" : "zero"
+function checkScope() {
+    "use strict";
+    var i = "function scope";
+    if (true) {
+        i = "block scope";
+        console.log("Block scope i is: ", i);
+    }
+    console.log("Function scope i is: ", i);
+    return i;
 }
 
-console.log(checkSign(0));
+checkScope();

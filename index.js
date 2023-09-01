@@ -571,6 +571,8 @@ function catTalk(){
 }
 catTalk();
 /* Compare Scopes of the var and let keywords */
+//  var variables are declared globally or within function.
+// let variable are declared within a block
 function checkScope() {
     "use strict";
     var i = "function scope";

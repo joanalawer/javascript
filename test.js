@@ -1,13 +1,19 @@
-// Mutate an Array declared with const
-const s = [5, 7, 2];
-function editInPlace(){
+//  Prevent object mutation
+function freezeObj() {
     "use strict";
-
-    // s = [2, 5, 7];
-    s[0] = 2;
-    s[1] = 5;
-    s[2] = 7;
+    const MATH_CONSTANTS = {
+        PI : 3.14
+    };
+    
+    Object.freeze(MATH_CONSTANTS); //prevents value of varible from changing
+     
+    try {
+        MATH_CONSTANTS.PI = 99;
+    } catch( ex ){
+        console.log(ex);
+    }
+    return MATH_CONSTANTS.PI;
 }
 
-editInPlace();
-console.log(s);
+const PI = freezeObj();
+console.log(PI);

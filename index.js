@@ -605,4 +605,22 @@ printManyTimes("freeCodeCamp");
 
 
 /* ************************************************************************* */
-// Mutate an Array declared with const
+//  Prevent object mutation
+function freezeObj() {
+    "use strict";
+    const MATH_CONSTANTS = {
+        PI : 3.14
+    };
+    
+    Object.freeze(MATH_CONSTANTS); //prevents value of varible from changing
+     
+    try {
+        MATH_CONSTANTS.PI = 99;
+    } catch( ex ){
+        console.log(ex);
+    }
+    return MATH_CONSTANTS.PI;
+}
+
+const PI = freezeObj();
+console.log(PI);

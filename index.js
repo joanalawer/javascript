@@ -585,3 +585,19 @@ function checkScope() {
 }
 
 checkScope();
+/* ************************************************************************* */
+
+
+/* ************************************************************************* */
+// Declare a read-only variable with the const keyword
+// const has all the features of let and is read-only; cannot be reassigned
+function printManyTimes(str) {
+    "use strict";
+    const SENTENCE = str + " is cool";
+    
+    for(let i = 0; i < StereoPannerNode.length; i+=2){
+        console.log(SENTENCE);
+    }
+}
+
+printManyTimes("freeCodeCamp");

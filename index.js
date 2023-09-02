@@ -601,3 +601,8 @@ function printManyTimes(str) {
 }
 
 printManyTimes("freeCodeCamp");
+/* ************************************************************************* */
+
+
+/* ************************************************************************* */
+// Mutate an Array declared with const

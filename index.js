@@ -624,3 +624,19 @@ function freezeObj() {
 
 const PI = freezeObj();
 console.log(PI);
+/* ************************************************************************* */
+
+
+/* ************************************************************************* */
+// Use arrow functions to write concise anonymous functions
+var magic = function() {
+    return new Date();
+}; 
+// this anonymous function can be written as:
+const magic = () => new Date();
+/* write arrow functions with parameters*/
+const myConcat = (arr1, arr2) => arr1.concat(arr2);
+
+console.log(myConcat([1, 2], [3, 4, 5]));
+/* Write higher order arrow functions */
+// .filter, .map, 

@@ -665,8 +665,9 @@ console.log(increment(5));
 /* Use the rest operator with function parameters
 The rest operator(three dots) allows to create a function that takes a variable of three arguments  */
 const sum = (function() {
-    return function sum(x, y, z) { 
-        const args = [x, y, z];
+    // return function sum(x, y, z) { 
+    //     const args = [x, y, z];
+    return function sum(...args) {
         return args.reduce((a, b) => a + b, 0);
     };
 })(); 

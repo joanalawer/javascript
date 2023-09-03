@@ -1,12 +1,11 @@
-const AVG_TEMPERATURE = {
-    today: 77.5, tomorrow: 79
+// Create strings using templates literals
+const person = {
+    name: "Zodiac Hasbro",
+    age: 56
 };
 
-function getTempOfTmrw(avgTemperatures) {
-    "use strict";
+// Template literal with multiline and string interpolation
+const greeting = `Hello, name is ${person.name}!
+I am ${person.age} years old.`;
 
-    const { tomorrow : tempOfTomorrow } = avgTemperatures;
-    return tempOfTomorrow;
-}
-
-console.log(getTempOfTmrw(AVG_TEMPERATURE));
+console.log(greeting);

@@ -32,11 +32,11 @@ var str = 'There is a "double quote" string in "double quotes"';
 /* *************************************************************************************************** */
 
 // Length of a string
-var firts_name = "Joana";
-firts_name_length = firts_name.length;
+var first_name = "Joana";
+first_name_length = first_name.length;
 console.log(firts_name_length);
 
-firstLetterOfFirstname = firts_name[0];
+firstLetterOfFirstname = first_name[0];
 
 var lastName = "Lawer";
 var lastLetterOfLastName = lastName[lastName.length - 1];
@@ -73,7 +73,7 @@ console.log(array);
 var multiArray = [[1,2,3], [4,5,6], [7,8,9], [10,11,12], 13, 14];
 var myData = multiArray[2][1];
 console.log(myData);
-//  append an array by adding element at the end of array
+//  append an array by push(): adding element at the end of array
 myData.push([15, 16]);
 console.log(myData);
 
@@ -179,8 +179,8 @@ console.log(myTrueOrFalse(false));
 
 // Comparion
 /* Equality, Strict equality, not equal, strict in equality 
-    greter than, less than, greater than or equal to, less than or equal to
-    logival and, logical or*/
+    greater than, less than, greater than or equal to, less than or equal to
+    logical and, logical or*/
 // ==, ===, !=, !==, <, >, <=, >=, &&, ||
 
 // Else statement
@@ -446,6 +446,7 @@ var myMusicCollection = [
         ]
     },
     {
+        // Global and Local Scope and Functions
         type: "trees",
         list: [
             "fir",

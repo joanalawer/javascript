@@ -672,3 +672,16 @@ const sum = (function() {
     };
 })(); 
 console.log(sum(1, 2, 3));
+/* ************************************************************************* */
+
+
+/* ************************************************************************* */
+/* Use spread operator to evaluate arrays in place */
+const arr1 = ['JAN', 'FEB', 'MAR', 'APR', 'MAY'];
+let arr2;
+(function() {
+    arr2 = arr1;    // chnege line to arr2 = [...arr1]; to implement spread operator
+    arr1[0] = 'potato'
+})();
+
+console.log(arr2);

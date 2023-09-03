@@ -1,19 +1,9 @@
-//  Prevent object mutation
-function freezeObj() {
-    "use strict";
-    const MATH_CONSTANTS = {
-        PI : 3.14
-    };
-    
-    Object.freeze(MATH_CONSTANTS); //prevents value of varible from changing
-     
-    try {
-        MATH_CONSTANTS.PI = 99;
-    } catch( ex ){
-        console.log(ex);
-    }
-    return MATH_CONSTANTS.PI;
-}
+const realNumberArray = [4, 5.5, -9.8, 3.14, 42, 6, 8.34, -2];
 
-const PI = freezeObj();
-console.log(PI);
+const squareList = (arr) => {
+    const squaredIntegers = arr.filter(num => Number.isInteger(num) && num > 0).map(x => x * x );
+    return squaredIntegers;
+};
+
+const squaredIntegers = squareList(realNumberArray);
+console.log(squaredIntegers);

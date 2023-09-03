@@ -818,3 +818,5 @@ console.log(temp);
 
 /* ************************************************************************* */
 // The difference between import and require
+// Create an export fallback with export default
+//  To import default export don't use curly braces around function

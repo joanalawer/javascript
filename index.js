@@ -650,3 +650,24 @@ const squareList = (arr) => {
 
 const squaredIntegers = squareList(realNumberArray);
 console.log(squaredIntegers);
+/////////////////////////////////////////////////////////////////////////////////////
+const increment = (function() {
+    return function increment(number, value = 1) {
+        return number + value;
+    };
+})();
+console.log(increment(5, 2));
+console.log(increment(5));
+/* ************************************************************************* */
+
+
+/* ************************************************************************* */
+/* Use the rest operator with function parameters
+The rest operator(three dots) allows to create a function that takes a variable of three arguments  */
+const sum = (function() {
+    return function sum(x, y, z) { 
+        const args = [x, y, z];
+        return args.reduce((a, b) => a + b, 0);
+    };
+})(); 
+console.log(sum(1, 2, 3));

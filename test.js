@@ -1,8 +1,12 @@
-const sum = (function() {
-    // return function sum(x, y, z) { 
-    //     const args = [x, y, z];
-    return function sum(...args) {
-        return args.reduce((a, b) => a + b, 0);
-    };
-})(); 
-console.log(sum(1, 2, 3, 7));
+const AVG_TEMPERATURE = {
+    today: 77.5, tomorrow: 79
+};
+
+function getTempOfTmrw(avgTemperatures) {
+    "use strict";
+
+    const { tomorrow : tempOfTomorrow } = avgTemperatures;
+    return tempOfTomorrow;
+}
+
+console.log(getTempOfTmrw(AVG_TEMPERATURE));

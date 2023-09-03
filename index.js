@@ -705,7 +705,8 @@ const AVG_TEMPERATURE = {
 function getTempOfTmrw(avgTemperatures) {
     "use strict";
 
-    const tempOfTomorrow = undefined;
+    const tempOfTomorrow = undefined;   // change line to implement destructuring
+    // const { tomorrow : tempOfTomorrow } = avgTemperatures
     return tempOfTomorrow;
 }
 

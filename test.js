@@ -1,12 +1,22 @@
-//  Use class syntax to define a constructor function
+// Use getters and setters to control access to an object
 function makeClass() {
-    class Vegetable {
-        constructor(name){
-            this.name = name;
-        }
+    class Thermostat {
+       constructor(temp) {
+           this._temp = 5/9 * (temp - 32);
+       }
+       get temperature() {
+           return this._temp;
+       }
+       set temperature(updatedTemp) {
+           return this._temp = updatedTemp;
+       }
     }
-    return Vegetable;
-}
-const Vegetable = makeClass();
-const carrot = new Vegetable('carrot');
-console.log(carrot.name);
+    return Thermostat;
+   }
+
+const Thermostat = makeClass();
+const thermos = new Thermostat(76);
+let temp = thermos.temperature;
+thermos.temperature = 26;
+temp = thermos.temperature;
+console.log(temp);

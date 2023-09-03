@@ -685,3 +685,28 @@ let arr2;
 })();
 
 console.log(arr2);
+/* ************************************************************************* */
+
+
+/* ************************************************************************* */
+/* Use destructuring assignment to assign variables from objects*/
+var voxel = {x: 3.6, y: 7.4, z: 6.54};
+
+var x = voxel.x;
+var y = voxel.y;
+var z = voxel.z;
+
+const { x:a, y:b, c:z} = voxel;
+
+const AVG_TEMPERATURE = {
+    today: 77.5, tomorrow: 79
+};
+
+function getTempOfTmrw(avgTemperatures) {
+    "use strict";
+
+    const tempOfTomorrow = undefined;
+    return tempOfTomorrow;
+}
+
+console.log(getTempOfTmrw(AVG_TEMPERATURE));

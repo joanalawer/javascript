@@ -812,3 +812,9 @@ let temp = thermos.temperature;
 thermos.temperature = 26;
 temp = thermos.temperature;
 console.log(temp);
+
+/* ************************************************************************* */
+
+
+/* ************************************************************************* */
+// The difference between import and require

@@ -721,9 +721,18 @@ const LOCAL_FORECAST = {
 function getMaxOfTmrw(forecast) {
     "use strict";
 
-    const { tomorrow: {max: maxOfTomorrow }} = forecast;    // chnge occurs here
+    const { tomorrow: {max: maxOfTomorrow }} = forecast;    // change occurs here
 
     return maxOfTomorrow;
 }
 console.log(getMaxOfTmrw(LOCAL_FORECAST));
 
+// Destructuring assignment to assign variables from Arrays
+// Destructing assignment with the rest oprerator
+// Destructuring assignment to pass an object as a function's parameter
+
+/* ************************************************************************* */
+
+
+/* ************************************************************************* */
+// Create strings using templates literals
